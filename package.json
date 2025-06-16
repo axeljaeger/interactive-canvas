@@ -11,6 +11,6 @@
   "devDependencies": {
     "@babylonjs/core": "^7.52.2",
     "typescript": "^5.8.3",
-    "vite": "^6.2.5"
+    "vite": "^6.3.5"
   }
 }
