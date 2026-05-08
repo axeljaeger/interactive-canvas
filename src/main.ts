@@ -8,7 +8,7 @@ import { CreateSphere } from '@babylonjs/core/Meshes/Builders/sphereBuilder';
 import { ShaderMaterial } from '@babylonjs/core/Materials/shaderMaterial';
 import { ShaderLanguage } from '@babylonjs/core/Materials/shaderLanguage';
 import { PointerDragBehavior } from '@babylonjs/core/Behaviors/Meshes/pointerDragBehavior';
-import { Mesh } from '@babylonjs/core/Meshes/mesh';
+import type { Mesh } from '@babylonjs/core/Meshes/mesh';
 
 import '@babylonjs/core/Meshes/thinInstanceMesh';
 
@@ -151,6 +151,6 @@ const createScene = () => {
 
 createScene();
 // Watch for browser/canvas resize events
-window.addEventListener("resize", function () {
+window.addEventListener("resize", () => {
   engine.resize();
 });
